@@ -1,6 +1,6 @@
 let
 
-  region = "us-west-1";
+  region = "us-east-1";
   accessKeyId = "at-dev"; # symbolic name looked up in ~/.ec2-keys
 
   ec2 =
