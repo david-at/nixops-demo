@@ -8,8 +8,11 @@ let
     { deployment.targetEnv = "ec2";
       deployment.ec2.accessKeyId = accessKeyId;
       deployment.ec2.region = region;
-      deployment.ec2.securityGroups = [ "allow-ssh" "allow-http" ];
+      deployment.ec2.securityGroupsIds = [ "sg-85e506fd" "sg-85e506fd" ];
       deployment.ec2.instanceType = "m1.small";
+      deployment.ec2.subnetId = "subnet-73a2c12a";
+      deployment.ec2.associatePublicIpAddress = true;
+      
       deployment.ec2.keyPair = resources.ec2KeyPairs.my-key-pair;
     };
 
