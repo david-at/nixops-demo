@@ -11,7 +11,7 @@ let
 in
 
 {
-  network.description = "Load balancing network";
+  network.description = "NixOps Demo";
 
   proxy =
     { config, pkgs, nodes, ... }:
